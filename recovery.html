@@ -1,327 +1,261 @@
 <!DOCTYPE html>
-<html lang="pt">
-	<head>
-		<meta charset="UTF-8">
-        <title>PROVA AÍ</title>
-        <meta name="keywords" content="prova, ai" />
-        <meta name="description" content="Prova aí!">
-		<link href="/img/icon.png" rel="icon" type="image/x-icon"/>
-		<link href="/css/bootstrap.min.css" rel="stylesheet">
-		<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-		<link href="/css/bootstrap-tagsinput.css" rel="stylesheet">
-		<link href="/css/fonts-awesome/css/font-awesome.css" rel="stylesheet">
-
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<!--[if IE 7]>
-			<link rel="stylesheet" href="/css/fonts-awesome/css/font-awesome-ie7.min.css">
-		<![endif]-->
-		
-		<link href="/css/estilos.css" rel="stylesheet" type="text/css"/>
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<div class="row">
-					<div id="logo" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-						<h1>
-							<a href="/" title="Link Home Prova Aí!">
-								<img src="/img/logo.png" alt="Prova Aí" class="img-responsive">
-							</a>
-						</h1>
-					</div>
-
-					<!-- SE O USUÁRIO NÃO ESTIVER LOGADO, ESTE É O TOPO COM A BARRA DE BUSCA
-					<div id="barraDeBusca" class="col-xs-12 col-sm-5 col-md-5 col-lg-7">
-						<div class="form-group">	
-						    <div class="input-group">
-						    	<span class="input-group-btn">
-							        <select class="btn btn-default btn-danger dropdown-toggle selectSexoBusca">
-							        	<option value="F/M">F/M</option>
-							        	<option value="F">F</option>
-							        	<option value="M">M</option>
-							        </select>
-							    </span>
-
-						    	<input class="form-control" type="text" id="searchBar" name="searchBar" data-role="tagsinput">
-						    	<input type="submit" value="" id="submitSearch"> 
-
-						    	<ul id="categoriesBox" style="display: none;">
-						    		<li><a href="javascript:void(0);" title="Categoria">Categoria</a></li>
-						    		<li><a href="javascript:void(0);" title="Esporte">Esporte</a></li>
-						    		<li><a href="javascript:void(0);" title="Training">Training</a></li>
-						    		<li><a href="javascript:void(0);" title="Kids">Kids</a></li>
-						    		<li><a href="javascript:void(0);" title="Tenis">Tênis</a></li>
-						    		<li><a href="javascript:void(0);" title="Futebol">Futebol</a></li>
-						    		<li><a href="javascript:void(0);" title="Basquete">Basquete</a></li>
-						    		<li><a href="javascript:void(0);" title="Calçados">Calçados</a></li>
-						    		<li><a href="javascript:void(0);" title="Camisas">Camisas</a></li>
-						    		<li><a href="javascript:void(0);" title="Acessórios">Acessórios</a></li>
-						    		<li><a href="javascript:void(0);" title="Shorts">Shorts</a></li>
-						    		<li><a href="javascript:void(0);" title="Social">Social</a></li>
-						    		<li><a href="javascript:void(0);" title="Camisetas">Camisetas</a></li>
-						    		<li><a href="javascript:void(0);" title="Blusões">Blusões</a></li>
-						    		<li><a href="javascript:void(0);" title="Moletom">Moletom</a></li>
-						    		<li><a href="javascript:void(0);" title="Esportivo">Esportivo</a></li>
-						    	</ul>
-						    	
-						    	<span class="input-group-btn">
-							        <select class="btn btn-default btn-danger dropdown-toggle selectLocalBusca">
-							        	<option value="NULL">Selecione o Local</option>
-							        	<option value="AC">Acre</option>
-										<option value="AL">Alagoas</option>
-										<option value="AM">Amazonas</option>
-										<option value="AP">Amapá</option>
-										<option value="BA">Bahia</option>
-										<option value="CE">Ceará</option>
-										<option value="DF">Distrito Federal</option>
-										<option value="ES">Espirito Santo</option>
-										<option value="GO">Goiás</option>
-										<option value="MA">Maranhão</option>
-										<option value="MG">Minas Gerais</option>
-										<option value="MS">Mato Grosso do Sul</option>
-										<option value="MT">Mato Grosso</option>
-										<option value="PA">Pará</option>
-										<option value="PB">Paraíba</option>
-										<option value="PE">Pernambuco</option>
-										<option value="PI">Piauí</option>
-										<option value="PR">Paraná</option>
-										<option value="RJ">Rio de Janeiro</option>
-										<option value="RN">Rio Grande do Norte</option>
-										<option value="RO">Rondônia</option>
-										<option value="RR">Roraima</option>
-										<option value="RS">Rio Grande do Sul</option>
-										<option value="SC">Santa Catarina</option>
-										<option value="SE">Sergipe</option>
-										<option value="SP">São Paulo</option>
-										<option value="TO">Tocantins</option>
-							        </select>
-							    </span>
-						    </div>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PROVA AÍ</title>
+	<link href="img/icon.png" rel="icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="commons/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="commons/bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="commons/font-awesome-4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="commons/css/bootstrap-tagsinput.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<!--<link rel="stylesheet/less" href="less/estilos.less">-->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="logo col-xs-12 col-sm-2 col-md-2 col-lg-2">
+					<a href="index.html"><img src="img/logo.png" width="300" alt="" class="img-responsive"></a>
+				</div>
+				<div class="busca col-xs-12 col-sm-7 col-md-7 col-lg-8">
+					<div class="form-group">	
+						<div class="input-group">
+							<span class="input-group-addon"><button class="btn btn-danger" id="btn-genero" name="genero" value="M">M</button></span>
+							<input class="form-control" type="text" id="searchBar" name="searchBar" data-role="tagsinput">
+							<span class="input-group-addon pesquisar">
+								<button class="btn btn-danger"><i class="fa fa-search"></i></button>
+							</span>
+							<span class="input-group-addon">
+								<select class="btn btn-danger dropdown-toggle selectLocalBusca">
+									<option value="NULL">Selecione o Local</option>
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AM">Amazonas</option>
+									<option value="AP">Amapá</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espirito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="PR">Paraná</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SE">Sergipe</option>
+									<option value="SP">São Paulo</option>
+									<option value="TO">Tocantins</option>
+								</select>
+							</span>
 						</div>
 					</div>
 
+					<div class="menu-tags">
+						<div class="lista-tags">
+							<div class="row">
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<p><strong>Categoria</strong></p>
+									<ul>
+										<li><a href="#">Categoria 1</a></li>
+										<li><a href="#">Categoria 2</a></li>
+										<li><a href="#">Categoria 3</a></li>
+										<li><a href="#">Categoria 4</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<p><strong>Categoria</strong></p>
+									<ul>
+										<li><a href="#">Categoria 1</a></li>
+										<li><a href="#">Categoria 2</a></li>
+										<li><a href="#">Categoria 3</a></li>
+										<li><a href="#">Categoria 4</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<p><strong>Categoria</strong></p>
+									<ul>
+										<li><a href="#">Categoria 1</a></li>
+										<li><a href="#">Categoria 2</a></li>
+										<li><a href="#">Categoria 3</a></li>
+										<li><a href="#">Categoria 4</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<p><strong>Categoria</strong></p>
+									<ul>
+										<li><a href="#">Categoria 1</a></li>
+										<li><a href="#">Categoria 2</a></li>
+										<li><a href="#">Categoria 3</a></li>
+										<li><a href="#">Categoria 4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="outras-opcoes">
+							<ul>
+								<li>
+									<a href="#">
+										<span class="icone"><i class="fa fa-star"></i></span>
+										Favoritos
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icone"><i class="fa fa-star"></i></span>
+										Favoritos
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icone"><i class="fa fa-star"></i></span>
+										Favoritos
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="usuario col-xs-12 col-sm-3 col-md-3 col-lg-2">
+					<!-- Inicio realizar login -->
+					<!--
 					<div id="fazerLogin">
-						<div id="botaoLogin" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-							<a href="javascript:void(0);" class="btn btn-default btn-danger">Entrar</a>
+						<div id="botaoLogin">
+							<a href="javascript:void(0);" class="btn btn-danger btn-block">Entrar</a>
 						</div>
-						<div style="display: none;" id="formularioLogin">
-							<img src="/img/logo.png" alt="Prova Aí" class="img-responsive">
+						<div id="formularioLogin" class="box-usuario-header">
+							<img src="img/logo.png" alt="Prova Aí" class="img-responsive">
 							<a href="#" class="entrarComFacebook">
-								<img src="/img/login-facebook.png" alt="Login at Prova Aí with Facebook">
+								<img src="img/login-facebook.png" alt="Login at Prova Aí with Facebook" class="img-responsive">
 							</a>
 							<form class="formularioLogin" action="" method="post">
-								<input type="text" id="usuario" name="usuario" placeholder="Usuário ou Facebook" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" required>
-								<input type="password" id="senha" name="senha" placeholder="Senha" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" required>
-								<input type="submit" value="Entrar" class="entrarProvaAi col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<input type="text" id="usuario" name="usuario" placeholder="Usuário ou Facebook" class="form-control" required>
+								<input type="password" id="senha" name="senha" placeholder="Senha" class="form-control" required>
+								<input type="submit" value="Entrar" class="btn btn-danger btn-block">
 							</form>
 							<input type="checkbox" id="permanecerLogado" name="permanecerLogado" value="Permanecer logado"><label for="permanecerLogado">Permanecer logado.</label>
-							<a href="/recovery.html" title="Esqueceu sua senha?" id="esqueceuSenha">Esqueceu sua senha?</a>
+							<a href="recovery.html" title="Esqueceu sua senha?" id="esqueceuSenha">Esqueceu sua senha?</a>
 							<div class="outrasOpcoesLogin">
-								<a href="/user-register.html" title="Ainda não se Cadastrou?" id="aindaNaoCadastrou">Ainda não se cadastrou?</a>
+								<a href="user-register.html" title="Ainda não se Cadastrou?" id="aindaNaoCadastrou">Ainda não se cadastrou?</a>
 							</div>
 						</div>
 					</div>
 					-->
+					<!-- Fim realizar login -->
 
-					<!-- SE O USUÁRIO ESTIVER LOGADO, ESTE É O TOPO COM A BARRA DE BUSCA E USUÁRIO -->
-					<div id="barraDeBuscaLogado" class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
-						<div class="form-group">	
-						    <div class="input-group">
-						    	<span class="input-group-btn">
-							        <select class="btn btn-default btn-danger dropdown-toggle selectSexoBusca">
-							        	<option value="F/M">F/M</option>
-							        	<option value="F">F</option>
-							        	<option value="M">M</option>
-							        </select>
-							    </span>
-
-							    <div id="buscaAvancada">
-							    	<input class="form-control" type="text" id="searchBar" name="searchBar" data-role="tagsinput">
-							    	<input type="submit" value="" id="submitSearch"> 
-						    	</div>
-
-						    	<ul id="categoriesBox" style="display: none;">
-						    		<li><a href="javascript:void(0);" title="Categoria">Categoria</a></li>
-						    		<li><a href="javascript:void(0);" title="Esporte">Esporte</a></li>
-						    		<li><a href="javascript:void(0);" title="Training">Training</a></li>
-						    		<li><a href="javascript:void(0);" title="Kids">Kids</a></li>
-						    		<li><a href="javascript:void(0);" title="Tenis">Tênis</a></li>
-						    		<li><a href="javascript:void(0);" title="Futebol">Futebol</a></li>
-						    		<li><a href="javascript:void(0);" title="Basquete">Basquete</a></li>
-						    		<li><a href="javascript:void(0);" title="Calçados">Calçados</a></li>
-						    		<li><a href="javascript:void(0);" title="Camisas">Camisas</a></li>
-						    		<li><a href="javascript:void(0);" title="Acessórios">Acessórios</a></li>
-						    		<li><a href="javascript:void(0);" title="Shorts">Shorts</a></li>
-						    		<li><a href="javascript:void(0);" title="Social">Social</a></li>
-						    		<li><a href="javascript:void(0);" title="Camisetas">Camisetas</a></li>
-						    		<li><a href="javascript:void(0);" title="Blusões">Blusões</a></li>
-						    		<li><a href="javascript:void(0);" title="Moletom">Moletom</a></li>
-						    		<li><a href="javascript:void(0);" title="Esportivo">Esportivo</a></li>
-						    	</ul>
-						    	
-						    	<span class="input-group-btn">
-							        <select class="btn btn-default btn-danger dropdown-toggle selectLocalBusca">
-							        	<option value="NULL">Selecione o Local</option>
-							        	<option value="AC">Acre</option>
-										<option value="AL">Alagoas</option>
-										<option value="AM">Amazonas</option>
-										<option value="AP">Amapá</option>
-										<option value="BA">Bahia</option>
-										<option value="CE">Ceará</option>
-										<option value="DF">Distrito Federal</option>
-										<option value="ES">Espirito Santo</option>
-										<option value="GO">Goiás</option>
-										<option value="MA">Maranhão</option>
-										<option value="MG">Minas Gerais</option>
-										<option value="MS">Mato Grosso do Sul</option>
-										<option value="MT">Mato Grosso</option>
-										<option value="PA">Pará</option>
-										<option value="PB">Paraíba</option>
-										<option value="PE">Pernambuco</option>
-										<option value="PI">Piauí</option>
-										<option value="PR">Paraná</option>
-										<option value="RJ">Rio de Janeiro</option>
-										<option value="RN">Rio Grande do Norte</option>
-										<option value="RO">Rondônia</option>
-										<option value="RR">Roraima</option>
-										<option value="RS">Rio Grande do Sul</option>
-										<option value="SC">Santa Catarina</option>
-										<option value="SE">Sergipe</option>
-										<option value="SP">São Paulo</option>
-										<option value="TO">Tocantins</option>
-							        </select>
-							    </span>
-						    </div>
+					<!--Inicio usuário conectado-->
+					<div class="usuario-conectado">
+						<div class="row header-logado">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<img src="img/usuarios/melksedeque-de-souza-silva.jpg" width="50" alt="" class="img-circle img-responsive">
+							</div>
+							<div class="nome col-xs-8 col-sm-8 col-md-8 col-lg-8">
+								Melksedeque <i class="fa fa-caret-down"></i>
+							</div>
 						</div>
-					</div>
-					<div id="dadosUsuario" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-						<div class="meuArmario col-xs-4 col-sm-4 col-md-4 col-lg-2">
-							<a href="/closet.html" title="Meu armário">
-								<img src="/img/meu-armario.png" alt="Meu Armário">
-							</a>
-						</div>
-						<div class="meuPerfil col-xs-8 col-sm-8 col-md-8 col-lg-10">
-							<a href="javascript:void(0);" title="Meu perfil" class="linkAcessarMenuUsuario">
-								<div class="imagemPerfilUsuario">
-									<img src="/img/usuarios/melksedeque-de-souza-silva.jpg" alt="Melksedeque de Souza Silva" class="img-responsive">
-								</div>
-								<div class="nomePerfilUsuario">
-									<p>Melksedeque de Souza Silva <i class="fa fa-caret-down"></i></p>
-								</div>
-							</a>
-							<!-- SE O USUÁRIO NÃO POSSUIR LOJAS, ESTE É O MENU
-							<div style="display: none;" id="menuUsuario">
-								<ul class="menuUsuario">
-									<li><a href="/store-register.html" title="Criar uma loja">Criar uma loja</a></li>
-									<li><a href="/closet.html" title="Meu armário">Meu armário</a></li>
-									<li><a href="/user-settings.html" title="Configurações">Configurações</a></li>
-									<li><a href="javascript:void(0);" title="Sair">Sair</a></li>
+						<div id="menu-usuario" class="box-usuario-header">
+							<div class="troca-usuarios">
+								<ul>
+									<li><a href="#"><img src="img/usuarios/melksedeque-de-souza-silva.jpg" width="50" alt="" class="img-responsive img-circle"> <span>User</span></a></li>
+									<li><a href="#"><img src="img/lojas/nike.png" width="50" alt="" class="img-responsive img-circle"> <span>Loja 1</span></a></li>
+									<li><a href="#"><img src="img/lojas/nike.png" width="50" alt="" class="img-responsive img-circle"> <span>Loja 2</span></a></li>
 								</ul>
 							</div>
-							-->
-							<!-- SE O USUÁRIO POSSUIR LOJAS, ESTE É O MENU DE USUÁRIO -->
-							<div style="display: none;" id="menuUsuarioComLoja">
-								<div class="trocaDeUsuario">
-									<p>Trocar de usuário</p>
-									<ul class="usuarioOuLoja">
-										<li><a href="javascript:void(0);" title="Nome do Usuário">
-											<div class="imagemTrocarParaUsuario">
-												<img src="/img/usuarios/melksedeque-de-souza-silva.jpg" alt="Melksedeque de Souza Silva" class="img-responsive">
-											</div>
-										</a></li>
-										<li><a href="javascript:void(0);" title="Nome da Loja">
-											<div class="imagemTrocarParaLoja">
-												<img src="/img/lojas/nike.png" alt="Loja Numero 1" class="img-responsive">
-											</div>
-										</a></li>
-										<li><a href="javascript:void(0);" title="Nome da Loja">
-											<div class="imagemTrocarParaLoja">
-												<img src="/img/lojas/nike.png" alt="Loja Numero 2" class="img-responsive">
-											</div>
-										</a></li>
-									</ul>
-								</div>
-								<ul class="menuUsuarioComLoja">
-									<li><a href="/store-edit.html" title="Criar uma loja">Administrar loja</a></li>
-									<li><a href="/closet.html" title="Meu armário">Meu armário</a></li>
-									<li><a href="/store-settings.html" title="Configurações da loja">Configurações da loja</a></li>
-									<li><a href="/user-settings.html" title="Configurações do usuário">Configurações do usuário</a></li>
-									<li><a href="javascript:void(0);" title="Sair">Sair</a></li>
+							<div class="links-menu">
+								<ul>
+									<li><a href="store-register.html">Criar uma loja</a></li>
+									<li><a href="closet.html">Meu armário</a></li>
+									<li><a href="user-settings.html">Configurações do usuário</a></li>
+									<li><a href="store-edit.html">Administrar vitrine</a></li>
+									<li><a href="store-settings.html">Configurações da loja</a></li>
+									<li><a href="index.html">Sair</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					
-				</div>
-			</div>	
-		</header>
-
-		<section>
-			<div class="container">
-				<div class="row">
-					<div id="contentRecoveryPassword" class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
-						<h1>Recupração de senha</h1>
-						<p>Insira seu email ou celular para localizar sua conta</p>
-
-						<form class="formRecoveryPassword" role"form" class="form-inline">
-							<div class="form-group">
-								<label for="InputEmailOuCelular" class="sr-only">Nome completo</label>
-								<input type="text" placeholder="Email ou celular" id="InputEmailOuCelular" class="form-control" required>
-							</div>
-
-							<button class="btn btn-success col-xs-5 col-sm-5 col-md-5 col-lg-5" type="submit">Pesquisar</button>
-							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-							<button class="btn btn-danger col-xs-5 col-sm-5 col-md-5 col-lg-5" onclick="location.href='/'" type="button">Cancelar</button>
-						</form>
-					</div>
+					<!--Fim usuário conectado-->
 				</div>
 			</div>
-		</section>
-
-		<!-- IF Encontrou usuário com sucesso, a parte acima some e aparece o codigo abaixo -->
-
-		<section>
-			<div class="container">
-				<div class="row">
-					<div id="contentRecoveryPassword" class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
-						<h1>Recupração de senha</h1>
-						<p>Foi encontrado a seguinte conta de usuário</p>
-
-						<div id="usuarioEncontrado" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="imagemUsuarioEncontrado">
-								<img src="/img/usuarios/melksedeque-de-souza-silva.jpg" alt="Melksedeque de Souza Silva" class="img-responsive">
+		</div>
+	</header>
+	<div class="container">
+		<div class="titulo-interno">
+			<h1>Recuperação de senha</h1>
+		</div>
+		
+		<div class="recovery-1">
+			<p class="text-center">Insira seu email ou celular para localizar sua conta</p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-lg-offset-2 col-sm-offset-2 col-md-offset-2">
+					<form action="" method="POST" role="form" class="validar">
+						<div class="form-group">
+							<input type="text" class="form-control email required" id="" placeholder="Digite seu e-mail ou telefone">
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<button type="submit" class="recovery-send btn btn-success btn-block"><i class="fa fa-search"></i> Pesquisar</button>
 							</div>
-							<div class="nomeUsuarioEncontrado">
-								<p>Melksedeque de Souza Silva</p>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<button type="button" class="btn btn-danger btn-block" onclick="location.href='index.html'"><i class="fa fa-close"></i> Cancelar</button>
 							</div>
 						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
-						<button class="btn btn-success col-xs-5 col-sm-5 col-md-5 col-lg-5" type="submit">Recuperar senha</button>
-						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-						<button class="btn btn-danger col-xs-5 col-sm-5 col-md-5 col-lg-5" onclick="location.href='/'" type="button">Cancelar</button>
+		<div class="recovery-2">
+			<p class="text-center">Foi encontrada a seguinte conta de usuário</p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-lg-offset-2 col-sm-offset-2 col-md-offset-2 recovery-perfil">
+					<p class="text-center"><img src="img/usuarios/melksedeque-de-souza-silva.jpg" height="432" width="432" alt="" class="img-responsive img-circle"></p>
+					<h3>Melksedeque de Souza Silva</h3>
+				</div>
+			</div>
+			<p class="text-center">Você gostaria de receber um email para redefinir sua senha?</p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-lg-offset-2 col-sm-offset-2 col-md-offset-2">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<button type="button" class="btn btn-success btn-block"><i class="fa fa-envelope"></i> Enviar email</button>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<button type="button" class="btn btn-danger btn-block" onclick="location.href='index.html'"><i class="fa fa-close"></i> Cancelar</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div id="copyright">
-						<p>@Company ® - All rights reserved</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
-		<script type="text/javascript" src="/js/jquery.cycle2.js"></script>
-		<script type="text/javascript" src="/js/bootstrap.min.js"></script> 
-		<script type="text/javascript" src="/js/bootstrap-tagsinput.min.js"></script> 
-		<script type="text/javascript" src="/js/bootstrap-tagsinput-angular.min.js"></script> 
-		<script type="text/javascript" src="/js/blur.min.js"></script>
-		<script type="text/javascript" src="/js/funcoes.js"></script>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<p class="text-center">@Company ® - All rights reserved</p>
+		</div>
+	</footer>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="commons/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/bootstrap-tagsinput.min.js"></script>
+	<script src="js/validate/jquery.validate.min.js"></script>
+	<script src="js/validate/localization/messages_pt_BR.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/less.min.js"></script>
 	</body>
 </html>

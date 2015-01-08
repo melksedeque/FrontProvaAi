@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PROVA AÍ</title>
+	<link href="img/icon.png" rel="icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="commons/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="commons/bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="commons/font-awesome-4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="commons/css/bootstrap-tagsinput.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<!--<link rel="stylesheet/less" href="less/estilos.less">-->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="logo col-xs-12 col-sm-2 col-md-2 col-lg-2">
+					<a href="index.html"><img src="img/logo.png" width="300" alt="" class="img-responsive"></a>
+				</div>
+				<div class="busca col-xs-12 col-sm-7 col-md-7 col-lg-8">
+					<div class="form-group">	
+						<div class="input-group">
+							<span class="input-group-addon"><button class="btn btn-danger" id="btn-genero" name="genero" value="M">M</button></span>
+							<input class="form-control" type="text" id="searchBar" name="searchBar" data-role="tagsinput">
+							<span class="input-group-addon pesquisar">
+								<button class="btn btn-danger"><i class="fa fa-search"></i></button>
+							</span>
+							<span class="input-group-addon">
+								<select class="btn btn-danger dropdown-toggle selectLocalBusca">
+									<option value="NULL">Selecione o Local</option>
+									<option value="AC">Acre</option>
+									<option value="AL">Alagoas</option>
+									<option value="AM">Amazonas</option>
+									<option value="AP">Amapá</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+									<option value="DF">Distrito Federal</option>
+									<option value="ES">Espirito Santo</option>
+									<option value="GO">Goiás</option>
+									<option value="MA">Maranhão</option>
+									<option value="MG">Minas Gerais</option>
+									<option value="MS">Mato Grosso do Sul</option>
+									<option value="MT">Mato Grosso</option>
+									<option value="PA">Pará</option>
+									<option value="PB">Paraíba</option>
+									<option value="PE">Pernambuco</option>
+									<option value="PI">Piauí</option>
+									<option value="PR">Paraná</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="RN">Rio Grande do Norte</option>
+									<option value="RO">Rondônia</option>
+									<option value="RR">Roraima</option>
+									<option value="RS">Rio Grande do Sul</option>
+									<option value="SC">Santa Catarina</option>
+									<option value="SE">Sergipe</option>
+									<option value="SP">São Paulo</option>
+									<option value="TO">Tocantins</option>
+								</select>
+							</span>
+						</div>
+					</div>
+
+					<div class="menu-tags">
+						<div class="lista-tags">
+							<div class="row">
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<p><strong>Categoria</strong></p>
+									<ul>
+										<li><a href="#">Categoria 1</a></li>
+										<li><a href="#">Categoria 2</a></li>
+										<li><a href="#">Categoria 3</a></li>
+										<li><a href="#">Categoria 4</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<p><strong>Categoria</strong></p>
+									<ul>
+										<li><a href="#">Categoria 1</a></li>
+										<li><a href="#">Categoria 2</a></li>
+										<li><a href="#">Categoria 3</a></li>
+										<li><a href="#">Categoria 4</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<p><strong>Categoria</strong></p>
+									<ul>
+										<li><a href="#">Categoria 1</a></li>
+										<li><a href="#">Categoria 2</a></li>
+										<li><a href="#">Categoria 3</a></li>
+										<li><a href="#">Categoria 4</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+									<p><strong>Categoria</strong></p>
+									<ul>
+										<li><a href="#">Categoria 1</a></li>
+										<li><a href="#">Categoria 2</a></li>
+										<li><a href="#">Categoria 3</a></li>
+										<li><a href="#">Categoria 4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="outras-opcoes">
+							<ul>
+								<li>
+									<a href="#">
+										<span class="icone"><i class="fa fa-star"></i></span>
+										Favoritos
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icone"><i class="fa fa-star"></i></span>
+										Favoritos
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="icone"><i class="fa fa-star"></i></span>
+										Favoritos
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="usuario col-xs-12 col-sm-3 col-md-3 col-lg-2">
+					<!-- Inicio realizar login -->
+					<!--
+					<div id="fazerLogin">
+						<div id="botaoLogin">
+							<a href="javascript:void(0);" class="btn btn-danger btn-block">Entrar</a>
+						</div>
+						<div id="formularioLogin" class="box-usuario-header">
+							<img src="img/logo.png" alt="Prova Aí" class="img-responsive">
+							<a href="#" class="entrarComFacebook">
+								<img src="img/login-facebook.png" alt="Login at Prova Aí with Facebook" class="img-responsive">
+							</a>
+							<form class="formularioLogin" action="" method="post">
+								<input type="text" id="usuario" name="usuario" placeholder="Usuário ou Facebook" class="form-control" required>
+								<input type="password" id="senha" name="senha" placeholder="Senha" class="form-control" required>
+								<input type="submit" value="Entrar" class="btn btn-danger btn-block">
+							</form>
+							<input type="checkbox" id="permanecerLogado" name="permanecerLogado" value="Permanecer logado"><label for="permanecerLogado">Permanecer logado.</label>
+							<a href="recovery.html" title="Esqueceu sua senha?" id="esqueceuSenha">Esqueceu sua senha?</a>
+							<div class="outrasOpcoesLogin">
+								<a href="user-register.html" title="Ainda não se Cadastrou?" id="aindaNaoCadastrou">Ainda não se cadastrou?</a>
+							</div>
+						</div>
+					</div>
+					-->
+					<!-- Fim realizar login -->
+
+					<!--Inicio usuário conectado-->
+					<div class="usuario-conectado">
+						<div class="row header-logado">
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+								<img src="img/usuarios/melksedeque-de-souza-silva.jpg" width="50" alt="" class="img-circle img-responsive">
+							</div>
+							<div class="nome col-xs-8 col-sm-8 col-md-8 col-lg-8">
+								Melksedeque <i class="fa fa-caret-down"></i>
+							</div>
+						</div>
+						<div id="menu-usuario" class="box-usuario-header">
+							<div class="troca-usuarios">
+								<ul>
+									<li><a href="#"><img src="img/usuarios/melksedeque-de-souza-silva.jpg" width="50" alt="" class="img-responsive img-circle"> <span>User</span></a></li>
+									<li><a href="#"><img src="img/lojas/nike.png" width="50" alt="" class="img-responsive img-circle"> <span>Loja 1</span></a></li>
+									<li><a href="#"><img src="img/lojas/nike.png" width="50" alt="" class="img-responsive img-circle"> <span>Loja 2</span></a></li>
+								</ul>
+							</div>
+							<div class="links-menu">
+								<ul>
+									<li><a href="store-register.html">Criar uma loja</a></li>
+									<li><a href="closet.html">Meu armário</a></li>
+									<li><a href="user-settings.html">Configurações do usuário</a></li>
+									<li><a href="store-edit.html">Administrar vitrine</a></li>
+									<li><a href="store-settings.html">Configurações da loja</a></li>
+									<li><a href="index.html">Sair</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--Fim usuário conectado-->
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container">
+		<div class="row header-loja">
+			<div class="logo col-xs-12 col-sm-2 col-md-4 col-lg-2">
+				<p><img src="img/lojas/nike.png" width="120" alt="" class="img-responsive img-circle"></p>
+			</div>
+			<div class="descricao col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<form action="" class="store-info-basico
+				">
+					<div class="form-group">
+						<input type="text" value="Vitrine da Nike" disabled="disabled" class="form-control input-lg">
+					</div>
+					<div class="form-group">
+						<textarea name="" id="" rows="3" class="form-control" disabled="disabled">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+					</div>
+				</form>
+
+				<ul class="midias">
+					<li class="facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+					<li class="twitter"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+					<li class="pinterest"><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+					<li class="linkedin"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+				<p>
+					<a href="#" class="editar-descricao-loja btn btn-block btn-default"><i class="fa fa-pencil"></i> Editar</a>
+					<a href="#" class="salvar-descricao-loja hidden btn btn-block btn-default"><i class="fa fa-save"></i> Salvar</a>
+				</p>
+
+				<p><a href="store-settings.html" class="btn btn-block btn-default"><i class="fa fa-cogs"></i> Configurações</a></p>
+				<p><a data-toggle="modal" href='#modal-edit-item' class="btn btn-block btn-default"><i class="fa fa-plus"></i> Adicionar uma peça</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="titulo-interno">
+			<h2>Todas as peças</h2>
+		</div>
+
+		<div class="row produtos-lista">
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-favorito"><i class="fa fa-star"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-01.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="favorito item-circle"><a href="#" title="Tornar favorito"><i class="fa fa-star"></i></a></div>
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="remover item-circle"><a href="#" title="Remover da loja"><i class="fa fa-close"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-favorito"><i class="fa fa-star"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-02.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="favorito item-circle"><a href="#" title="Tornar favorito"><i class="fa fa-star"></i></a></div>
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="remover item-circle"><a href="#" title="Remover da loja"><i class="fa fa-close"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-favorito"><i class="fa fa-star"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-03.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="favorito item-circle"><a href="#" title="Tornar favorito"><i class="fa fa-star"></i></a></div>
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="remover item-circle"><a href="#" title="Remover da loja"><i class="fa fa-close"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-favorito"><i class="fa fa-star"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-04.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="favorito item-circle"><a href="#" title="Tornar favorito"><i class="fa fa-star"></i></a></div>
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="remover item-circle"><a href="#" title="Remover da loja"><i class="fa fa-close"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-favorito"><i class="fa fa-star"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-05.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="favorito item-circle"><a href="#" title="Tornar favorito"><i class="fa fa-star"></i></a></div>
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="remover item-circle"><a href="#" title="Remover da loja"><i class="fa fa-close"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-favorito"><i class="fa fa-star"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-06.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="favorito item-circle"><a href="#" title="Tornar favorito"><i class="fa fa-star"></i></a></div>
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="remover item-circle"><a href="#" title="Remover da loja"><i class="fa fa-close"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-favorito"><i class="fa fa-star"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-07.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="favorito item-circle"><a href="#" title="Tornar favorito"><i class="fa fa-star"></i></a></div>
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="remover item-circle"><a href="#" title="Remover da loja"><i class="fa fa-close"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-favorito"><i class="fa fa-star"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-08.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="favorito item-circle"><a href="#" title="Tornar favorito"><i class="fa fa-star"></i></a></div>
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="remover item-circle"><a href="#" title="Remover da loja"><i class="fa fa-close"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+					</div>	
+
+		<div class="titulo-interno">
+			<h2>Peças inativas</h2>
+		</div>
+		<div class="row produtos-lista">
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto disabled">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-removido"><i class="fa fa-close"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-01.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="voltar-loja item-circle"><a href="#" title="Voltar para loja"><i class="fa fa-home"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto disabled">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-removido"><i class="fa fa-close"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-02.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="voltar-loja item-circle"><a href="#" title="Voltar para loja"><i class="fa fa-home"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto disabled">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-removido"><i class="fa fa-close"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-03.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="voltar-loja item-circle"><a href="#" title="Voltar para loja"><i class="fa fa-home"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+						<!-- Inicio produto -->
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<div class="produto disabled">
+					<div class="header-produto">
+						<div class="row">
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<a href="store.html"><img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt=""></a>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<h2><a href="store.html">Loja</a></h2>
+								<p>Título, cor, marca</p>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+								<div class="item-removido"><i class="fa fa-close"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="image-produto">
+						<p><a href="#"><img src="img/pecas/modelo-04.jpg" height="360" width="230" alt="" class="img-responsive"></a></p>
+					</div>
+					<div class="desc-produto">
+						<div class="price">R$ 126,00</div>
+						<div class="name"><h3>Título do produto</h3></div>
+						<div class="description"><p><strong>Descrição: </strong>Lorem ipsum dolor sit amet, adipiscing.</p></div>
+					</div>
+					<div class="option-produto">
+						<div class="editar item-circle"><a data-toggle="modal" href='#modal-edit-item' title="Editar"><i class="fa fa-cog"></i></a></div>
+						<div class="voltar-loja item-circle"><a href="#" title="Voltar para loja"><i class="fa fa-home"></i></a></div>
+						<div class="apagar item-circle"><a href="#" title="Apagar"><i class="fa fa-trash"></i></a></div>
+					</div>
+				</div>
+			</div>
+			<!-- Fim produto -->
+					</div>
+	</div>
+
+	
+	<div class="modal fade" id="modal-edit-item">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row formulario-peca">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<h2 class="text-center">Dados da peça</h2>
+							<form action="" id="form-peca" class="validar">
+								<div class="form-group">
+									<label for="loja" class="sr-only">Loja</label>
+									<input type="text" class="form-control required" id="loja" placeholder="Loja" value="Loja" disabled="disabled">
+								</div>
+
+								<div class="form-group">
+									<label for="titulo" class="sr-only">Título da peça</label>
+									<input type="text" class="form-control required" id="titulo" placeholder="Título da peça">
+								</div>
+
+								<div class="form-group">
+									<label for="cor" class="sr-only">Cor da peça</label>
+									<input type="text" class="form-control required" id="cor" placeholder="Cor da peça">
+								</div>
+
+								<div class="form-group">
+									<label for="marca" class="sr-only">Marca da peça</label>
+									<input type="text" class="form-control required" id="marca" placeholder="Marca da peça">
+								</div>
+								<p><small>Título, cor e marca devem conter apenas uma palavra</small></p>
+
+								<div class="form-group">
+									<label for="preco" class="sr-only">Preço</label>
+									<input type="text" class="form-control required" id="preco" placeholder="Preço">
+								</div>
+
+								<div class="form-group">
+									<label for="descricao" class="sr-only">Descrição da peça</label>
+									<input type="text" class="form-control required" id="descricao" placeholder="Descrição da peça">
+								</div>
+
+								<div class="form-group">
+									<label for="categoria" class="sr-only">Categoria</label>
+									<select name="categoria" id="categoria" class="form-control required">
+										<option value="">Selecione</option>
+										<option value="">Opção 1</option>
+										<option value="">Opção 2</option>
+										<option value="">Opção 3</option>
+										<option value="">Opção 4</option>
+										<option value="">Opção 5</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="sub-categoria" class="sr-only">Sub Categoria</label>
+									<select name="sub-categoria" id="sub-categoria" class="form-control required">
+										<option value="">Selecione</option>
+										<option value="">Opção 1</option>
+										<option value="">Opção 2</option>
+										<option value="">Opção 3</option>
+										<option value="">Opção 4</option>
+										<option value="">Opção 5</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="sexo" class="sr-only">Sexo</label>
+									<select name="sexo" id="sexo" class="form-control required">
+										<option value="">Selecione</option>
+										<option value="Feminino">Feminino</option>
+										<option value="Masculino">Masculino</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="endereco" class="sr-only">Endereço</label>
+									<input type="text" class="form-control required" id="endereco" placeholder="Endereço">
+								</div>
+								<p><small>O preenchimento correto do endereço é de fundamental importância para o real funcionamento do nosso serviço</small></p>
+							</form>
+						</div>
+						<div class="hidden-xs col-sm-6 col-md-6 col-lg-6">
+							<h2 class="text-center">Visualize sua peça</h2>
+
+							<!--Inicio produto-->
+							<div class="produto">
+								<div class="header-produto">
+									<div class="row">
+										<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+											<img src="img/marcas/hollister.png" height="30" width="30" class="img-responsive img-circle" alt="">
+										</div>
+										<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+											<h2 class="complete-loja">Loja</h2>
+											<p><span class="complete-titulo">Título</span>, <span class="complete-cor">cor</span>, <span class="complete-marca">marca</span></p>
+										</div>
+									</div>
+								</div>
+								<div class="image-produto">
+									<p><img src="img/pecas/modelo-01.jpg" height="360" width="230" alt="" class="img-responsive"></p>
+								</div>
+								<div class="desc-produto">
+									<div class="price">R$ <span class="complete-preco">126,00</span></div>
+									<div class="name"><h3><span class="complete-titulo">Título do produto</span></h3></div>
+									<div class="description"><p><strong>Descrição: </strong><span class="complete-descricao">Lorem ipsum dolor sit amet, adipiscing.</span></p></div>
+								</div>
+							</div>
+							<!--Fim produto-->
+
+
+							<!--<button type="button" data-dismiss="modal" class="btn btn-block btn-success"><i class="fa fa-check"></i> Publicar peça</button>-->
+							<button type="button" onclick="$('#form-peca').submit()" class="btn btn-block btn-success"><i class="fa fa-check"></i> Publicar peça</button>
+							<button type="button" data-dismiss="modal" class="btn btn-block btn-danger"><i class="fa fa-close"></i> Cancelar</button>
+						</div>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<footer>
+		<div class="container">
+			<p class="text-center">@Company ® - All rights reserved</p>
+		</div>
+	</footer>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="commons/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/bootstrap-tagsinput.min.js"></script>
+	<script src="js/validate/jquery.validate.min.js"></script>
+	<script src="js/validate/localization/messages_pt_BR.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/less.min.js"></script>
+	</body>
+</html>
